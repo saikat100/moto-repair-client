@@ -155,6 +155,10 @@ const LoginModal = () => {
                                     <input {...registerSignUp("password", { required: true })}type="password" />
                                 </label>
                                 <Button type="submit" variant='info' className="mt-5">Sign Up</Button>
+                                <div onClick={() => setNewUser(!newUser)} className="img__btn">
+                                <span className="m--up">Sign Up</span>
+                                <span className="m--in">Sign In</span>
+                            </div>
                                 <button type="button" onClick={googleSignIn} className="fb-btn mt-3" >Join with <span>Google</span></button>
                             </form>
                         </div>
